@@ -6,12 +6,15 @@ import BooksSection from '../components/BooksSection';
 
 const Books = () => {
 
+
+  const baseURL = 'https://backendbookstore-p5wh.onrender.com'
+
 const [Data,setData] = useState();
 useEffect(()=>{
 
   const fetch = async ()=>{
 
-    await axios.get('http://localhost:2000/api/v1/getBooks').then((res)=>
+    await axios.get(`${baseURL}/api/v1/getBooks`).then((res)=>
        setData(res.data.books))
   };
   fetch();

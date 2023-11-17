@@ -1,9 +1,15 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 
+
+
+
 const AddBooks = () => {
 
-  
+ 
+  const baseURL = 'https://backendbookstore-p5wh.onrender.com'
+
+
 const [Data,setData] = useState({
   bookname:"",
   author: "",
@@ -21,7 +27,7 @@ const change = (e) =>{
 const submit = async (e)=>{
   e.preventDefault();
   await axios
-  .post('http://localhost:2000/api/v1/add', Data)
+  .post(`${baseURL}/api/v1/add`, Data)
   .then((res)=>{ console.log(res)});
   setData({
     bookname:"",
