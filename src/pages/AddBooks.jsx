@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import axios from 'axios'
+import CopyURL from './CopyURL'
 
 
 
 
 const AddBooks = () => {
 
- 
+
   const baseURL = 'https://backendbookstore-p5wh.onrender.com'
 
 
@@ -69,8 +70,11 @@ console.log(Data);
 </div>
 
 <div className="mb-3 container">
+
+
   <label 
   for="exampleFormControlInput1" className="form-label">Description</label>
+
   <input 
   type="text" className="form-control" id="exampleFormControlInput1" placeholder="Enter Description"
   name='description'
@@ -78,13 +82,20 @@ console.log(Data);
   onChange={change} />
 </div>
 
-<div className="mb-3 container">
-  <label 
-  for="exampleFormControlInput1" className="form-label" style={{color:"red"}}>URL of image @Google (Copy image address) 
 
+
+<div className="mb-3 container" >
+ 
+
+
+  <label 
+  for="exampleFormControlInput1" className="form-label" style={{color:"yellow"}}>URL of book-image (Copy image address from @Google OR copy below URL to upload image) 
   </label>
+
+  <CopyURL/>
+
   <input 
-  type="text" className="form-control" id="exampleFormControlInput1" placeholder="Paste any http:// image address " 
+  type="text" className="form-control" id="exampleFormControlInput1" placeholder="Paste here image URL https://" 
   name='image'
   value={Data.image}
   onChange={change}/>
