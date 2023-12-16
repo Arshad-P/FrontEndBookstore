@@ -2,7 +2,7 @@
 
     width: 100%;
 }
-.viewBook{
+.AddBook{
 
   outline: none;
   border: 1px solid white;
@@ -13,7 +13,7 @@
   text-decoration: none;
   
   }
-  .viewBook:hover{
+  .AddBook:hover{
 
       color: green;
 

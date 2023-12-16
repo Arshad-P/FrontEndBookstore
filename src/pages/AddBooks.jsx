@@ -75,7 +75,7 @@ console.log(Data);
   <label 
   for="exampleFormControlInput1" className="form-label">Description</label>
 
-  <input 
+          <input 
   type="text" className="form-control" id="exampleFormControlInput1" placeholder="Enter Description"
   name='description'
   value={Data.description}
@@ -87,24 +87,26 @@ console.log(Data);
 <div className="mb-3 container" >
  
 
-
   <label 
   for="exampleFormControlInput1" className="form-label" style={{color:"yellow"}}>URL of book-image (Copy image address from @Google OR copy below URL to upload image) 
   </label>
 
   <CopyURL/>
 
-  <input 
+          <input 
   type="text" className="form-control" id="exampleFormControlInput1" placeholder="Paste here image URL https://" 
   name='image'
   value={Data.image}
   onChange={change}/>
 </div>
 
+
 <div className="mb-3 container">
+
   <label 
   for="exampleFormControlInput1" className="form-label">Price</label>
-  <input 
+
+            <input 
   type="number" className="form-control" id="exampleFormControlInput1" placeholder="Enter Price"
   name='price'
   value={Data.price}

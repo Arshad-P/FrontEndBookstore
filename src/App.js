@@ -1,3 +1,6 @@
+// FRONTEND 
+// 1st App.js, 2nd Navbar.jsx, 3rd  Home.jsx 4th AddBooks.js file 5th Books.jsx file
+
 
 import {BrowserRouter as Router,Routes,Route}from "react-router-dom"
 import Navbar from './components/Navbar';
@@ -18,8 +21,7 @@ function App() {
       <Route  path='/addbooks' element={<AddBooks/>}/>
       </Routes>
         <Footer/>
-    </Router>
-  
+    </Router> 
   );
 }
 export default App;

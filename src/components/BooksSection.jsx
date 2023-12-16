@@ -1,11 +1,12 @@
 
-
+// NOTE: in this file created Book details & size, Img
+// this BooksSection.jsx file sending to Books.jsx file
 
 import React from 'react'
 
 const BooksSection = ({data}) => {
 
-    
+  
   return (
     <div className='d-flex justify-content-around align-items-center flex-wrap my-3'>
        
@@ -25,7 +26,7 @@ const BooksSection = ({data}) => {
           height:'270px', borderRadius:'15px'}} className='img-fluid'
           src={item.image} alt='/'/>
        </div>
-   
+   ~
    <div style={{}}>
        <h6 className='text-white px-2 my-1'>
         BookName : {item.bookname.slice(0,20)}...

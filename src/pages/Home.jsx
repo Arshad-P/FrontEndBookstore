@@ -18,7 +18,7 @@ const Home = () => {
 <h4 style={{fontSize:'40px'}}>FOR YOU</h4>
 <p style={{color:'grey'}}>Checkout The Books From Here.</p>
 
-<Link to='/books' className='viewBook my-3' >View Books</Link>
+<Link to='/addbooks' className='AddBook my-3' >Add Books</Link>
 </div>
 
 <div className="col-lg-6 d-flex justify-content-center align-items-center flex-column" style={{height:'91.5vh'}}>
